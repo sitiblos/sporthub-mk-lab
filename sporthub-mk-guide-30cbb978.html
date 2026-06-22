@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK体育 · 杂志专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background: #f1f3f5;
+      color: #1e2a3a;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.02);
+      padding: 2.5rem 2rem 3rem;
+    }
+
+    /* —— 横幅 —— */
+    .hero {
+      background: #eef2f7;
+      border-radius: 24px;
+      padding: 3rem 2rem 2.5rem;
+      margin-bottom: 2.8rem;
+      border: 1px solid #d8dee8;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 450;
+      letter-spacing: 1px;
+      color: #1f2a3c;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #4b5a72;
+      font-weight: 320;
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      border-top: 1px solid #cdd6e4;
+      padding-top: 1rem;
+      opacity: 0.85;
+    }
+
+    /* —— 卡片区 —— */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
+
+    .card {
+      background: #fafbfc;
+      border-radius: 20px;
+      padding: 2rem 2.2rem;
+      border: 1px solid #e1e6ef;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0, 20, 40, 0.06);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      font-weight: 420;
+      color: #1f2a3c;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #dbe1eb;
+      letter-spacing: 0.3px;
+    }
+
+    .card p {
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+      color: #2b3a4f;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .intro-highlight {
+      background: #f3f6fb;
+      padding: 1rem 1.6rem;
+      border-radius: 16px;
+      border-left: 4px solid #7c8ba3;
+      margin: 1.2rem 0 0.8rem;
+      font-style: normal;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 3rem;
+      padding: 1.6rem 2rem;
+      background: #eef2f8;
+      border-radius: 20px;
+      border: 1px solid #d3dce9;
+      text-align: center;
+      font-size: 1rem;
+      color: #1e2a3a;
+    }
+
+    .footer-note a {
+      color: #1f3a5f;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #a1b3cc;
+      padding-bottom: 1px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .footer-note a:hover {
+      color: #0b1c33;
+      border-bottom-color: #0b1c33;
+    }
+
+    .divider-light {
+      width: 60px;
+      height: 2px;
+      background: #cbd3e1;
+      margin: 2rem auto 1.8rem;
+      border-radius: 2px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page {
+        padding: 1.6rem 1rem 2rem;
+      }
+      .hero {
+        padding: 2rem 1.2rem 1.8rem;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      .card {
+        padding: 1.6rem 1.2rem;
+      }
+      .card h2 {
+        font-size: 1.3rem;
+      }
+      .footer-note {
+        padding: 1.2rem 1rem;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 首页横幅 -->
+  <header class="hero">
+    <h1>MK体育 · 沿革与现场</h1>
+    <div class="sub">从赛事资讯到社群观察，一个安静的聚合入口</div>
+  </header>
+
+  <!-- 三段自然介绍 + 背景说明（杂志专题式） -->
+  <div class="card-grid">
+
+    <!-- 第一段：背景与可信说明 -->
+    <section class="card">
+      <h2>站点由来</h2>
+      <p>
+        大约三年前，一群长期关注体育数据与赛事转播的爱好者，开始整理分散在多个平台的信息源。他们发现，许多即时比分、转会动态和深度复盘往往被算法推荐所稀释，而真正有价值的内容却藏在论坛深处或付费墙之后。于是便有了搭建一个聚合页面的想法——不以流量为优先，只做克制的信息筛选。<strong>MK体育</strong> 就在这样的背景下逐步成形，至今仍维持着极小的编辑团队与志愿者网络。
+      </p>
+      <div class="intro-highlight">
+        <p>⚡ 站点不嵌入第三方竞价广告，不采集用户隐私数据，所有推荐链接均标注来源。团队定期清理失效页面，并公开每次改版日志。</p>
+      </div>
+    </section>
+
+    <!-- 第二段：特点与内容场景（不刻意分点，叙述式） -->
+    <section class="card">
+      <h2>内容与场景</h2>
+      <p>
+        打开 <a href="https://sporthub-mk.com" style="color:#1f3a5f; text-decoration:underline; text-underline-offset:3px; text-decoration-color:#b0c2d9;">MK体育</a>，首先看到的是当日重点赛事的短评与直播源索引，没有弹窗，没有自动播放的视频。往下一屏是过去一周的精选长文——不全是热门联赛，也会涉及冷门项目的战术笔记。对于只想快速核对积分的用户，页面左侧（桌面端）固定了一个简约的比分模块，更新延迟控制在两分钟以内。
+      </p>
+      <p>
+        很多访问者是在深夜或通勤时打开这个站点的。它不催促你“立即查看”，也不制造紧迫感。页面加载速度经过刻意优化，图片采用 WebP 格式，字体使用系统默认，整体体积控制在 600KB 以内。即便在信号不稳定的环境下，核心内容也能在 2 秒内呈现。
+      </p>
+    </section>
+
+    <!-- 第三段：延伸与 FAQ 摘要（自然融入，非机械问答） -->
+    <section class="card">
+      <h2>一些常见疑问</h2>
+      <p>
+        不少人第一次来到 <a href="https://sporthub-mk.com" style="color:#1f3a5f; text-decoration:underline; text-underline-offset:3px; text-decoration-color:#b0c2d9;">MK体育</a> 时会问：你们和那些大型体育门户有什么区别？简单来说，这里不追求全面，而是更看重编辑个人的判断力。每周更新的文章不超过七篇，但每篇都经过至少两轮事实核对。另外，站点没有评论区，取而代之的是一个简单的“反馈按钮”——你可以直接给编辑写信，大多数时候会在一天内收到回复。
+      </p>
+      <p>
+        另一个常被问到的问题是：内容的可信度如何保证？除了在每篇文章末尾附上信息来源外，团队还会为重大事件（如转会官宣、赛果更正）单独发布勘误说明。过去十二个月里，共发布过三次勘误，每一次都标注了时间戳和修正理由。
+      </p>
+      <p style="margin-top: 1.2rem; background: #f2f5fa; padding: 0.8rem 1.2rem; border-radius: 14px; font-size: 0.95rem;">
+        📬 如果你对某个专题有更深入的兴趣，或者发现了页面上的错误，欢迎通过站内邮箱联系编辑。你的反馈会直接进入每周的修订清单。
+      </p>
+    </section>
+  </div>
+
+  <div class="divider-light"></div>
+
+  <!-- 页尾访问提示（自然嵌入链接） -->
+  <div class="footer-note">
+    <p style="margin-bottom: 0.5rem;">如果你希望进一步了解 MK体育 的选文标准和更新节奏，可以直接访问 <a href="https://sporthub-mk.com">MK体育</a>，那里有完整的栏目索引与过去两年的文章存档。</p>
+    <p style="font-size: 0.9rem; color: #4d5e77; margin-top: 0.7rem;">—— 没有推送，没有会员墙，只有安静的内容聚合 ——</p>
+  </div>
+
+</div>
+</body>
+</html>
